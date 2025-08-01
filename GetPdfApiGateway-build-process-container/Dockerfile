@@ -1,7 +1,7 @@
 # ビルドステージ
 ## ベースイメージの指定
 # FROM maven:3.9.9-amazoncorretto-17-al2023 AS builder
-FROM public.ecr.aws/amazoncorretto/amazoncorretto:17.0.14-al2023
+FROM public.ecr.aws/amazoncorretto/amazoncorretto:17.0.14-al2023  AS builder
 # 資材をダウンロード
 RUN mkdir -p /webapps
 WORKDIR /webapps
