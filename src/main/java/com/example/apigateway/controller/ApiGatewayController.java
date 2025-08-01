@@ -40,7 +40,7 @@ public class ApiGatewayController {
      * 
      * @return PDFダウンロードページのテンプレート名
      */
-    @GetMapping("/getPdf_OP3")
+    @GetMapping("/")
     public String showIndexPage() {
         return "pdfDownload"; // pdfDownload.htmlテンプレートを返す
     }
