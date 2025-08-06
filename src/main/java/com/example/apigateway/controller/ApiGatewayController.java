@@ -61,7 +61,7 @@ public class ApiGatewayController {
      * @return PDFファイルを含むレスポンスエンティティ
      * @throws UnsupportedEncodingException ファイル名エンコードに失敗した場合
      */
-    @GetMapping("/ApiGateway")
+    @GetMapping("/ApiGateway_OP3")
     public ResponseEntity<InputStreamResource> getPdfApiGateway() throws UnsupportedEncodingException {
         // AWS API GatewayにGETリクエストを送信
         ResponseEntity<byte[]> response = restTemplate.exchange(
@@ -97,4 +97,5 @@ public class ApiGatewayController {
         }
     }
 }
+
 
